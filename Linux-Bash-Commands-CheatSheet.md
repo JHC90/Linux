@@ -12,6 +12,11 @@
     <td></td>
   </tr>
   <tr>
+    <td>hostname</td>
+    <td>Hostnamenändern</td>
+    <td></td>
+  </tr>
+  <tr>
     <td>ifconfig</td>
     <td>Info über Ip-Adresse</td>
     <td></td>
@@ -27,3 +32,5 @@
     <td></td>
   </tr>
 </table> 
+
+https://www.cyberciti.biz/faq/ubuntu-change-hostname-command/

@@ -1,17 +1,16 @@
 # Rollout Probleme
 leider klappt der Rollout von Ubuntu Server häufig nicht auf dem Windows hyperv, da eine Konfig anders sein muss
 
-hier mein Workaround
+hier mein Workaround nach dem Troubleshooting von:
+https://blog.codetitans.pl/post/install-ubuntu-server-1904-on-windows-10-hyper-v/
 
 
 
-Normales erstellen via Whizzard
-Generation2 bei der auswahl der geneartion
-als iso die Ubuntu server 19.04
-4 kerne / 8192 Ram
-vor dem ersten Booten der VM in die Einstellungen,
-
-dort unter sicherheit
+* Normales erstellen via Whizzard
+* Generation2 bei der auswahl der geneartion
+* als iso die Ubuntu server 19.04 !!!! vorsicht hier darf man nicht die Live-Distro nehmen, sondern braucht die Traditional Varainte. di kann hier beschafft werden:http://cdimage.ubuntu.com/releases/19.10/release/?_ga=2.65137838.1629437941.1583936050-279824244.1580910672 || alternativ einfach nach "ubunut server traditional installer" googlen
+* 4 kerne / 8192 Ram
+* vor dem ersten Booten der VM in die Einstellungen, dort unter sicherheit
 
 
 !!!! das hier ist die FALSCHE Auswahl im Dropdpwn: "Microsoft Windows" !!!!
@@ -29,6 +28,4 @@ und als Vorlage unbedingt auf "Microsoft UEFI-Zertifizerungsstelle" wechseln:
 
 danach sollte der Boot normal klappen.
 
-es kann noch im weiteren zu einem Traceback-Fehler kommen, den konnte ich noch nicht lösen. Ich hatte aber soweit meine Fragestellung hier geklärt. Den Traceback löse ich das nächste mal. 
-Eine Mögliche Lösung wäre,dass das IMG-File nicht gleichzeitig in zwei Rechnern drin sein kann, da der hyperv1 (level1) das img file für den spezfischen rollout blockt. Ich versuchs mal mit nem reboot des hyperv-Servers.
 

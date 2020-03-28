@@ -17,6 +17,11 @@ https://code.visualstudio.com/docs/remote/troubleshooting
     <th> mögliche Parameter</th>
   </tr>
   <tr>
+    <td>clear</td>
+    <td>löscht die Ausgabe auf der Kommandozeile</td>
+    <td><br>
+  </td>
+  <tr>
     <td>pwd</td>
     <td>zeigt das aktuelle Verzeichnis</td>
     <td><br>

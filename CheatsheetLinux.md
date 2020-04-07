@@ -111,3 +111,41 @@ https://code.visualstudio.com/docs/remote/troubleshooting
   </tr>
   
 <table>
+
+
+-----------
+## Networking
+sudo apt install net-tools
+
+
+<table style="width:100%">
+  <tr>
+    <th>Command</th>
+    <th>Umsetzung</th>
+    <th> mögliche Parameter</th>
+  </tr>
+  <tr>
+    <td>ip link set dev eth0 up </td>
+    <td>Schaltet eine NIC ein</td>
+    <td></td>
+  </tr>
+   <tr>
+    <td>sudo dhclient -v</td>
+    <td>erneuert die IP//ipconfig release & renew in Linux</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>dig +short myip.opendns.com @resolver1.opendns.com</td>
+    <td>zeigt die public ip</td>
+    <td></td>
+  </tr>
+  
+<table>
+sudo dhclient -v (= ipconfig release & renew in Linux)
+
+
+
+
+
+
+

@@ -7,6 +7,8 @@
 
 # Gastaccount einbinden
    >//192.168.0.12/AsteasLabShare  /mnt  cifs  guest,uid=1000,iocharset=utf8  0  0
-Sudo mount –a
+
+dann alle Laufwereke einbinden
+> sudo mount –a
 
 

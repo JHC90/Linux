@@ -11,6 +11,6 @@
    >deb http://download.webmin.com/download/repository sarge contrib
    1. >wget http://www.webmin.com/jcameron-key.asc
    2. >sudo apt-key add jcameron-key.asc
-   3. >sudo apt update / Upgrade
+   3. >sudo apt update && suod apt upgrade
    4. >sudo apt install webmin
    5. Done => warten bis durchgelaufen dann unter "webminServerIP":10000

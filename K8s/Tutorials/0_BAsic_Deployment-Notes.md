@@ -29,8 +29,7 @@ auf beiden
 ![](imgs/2020-04-09-10-36-29.png)
 * get Kubernetes signing key
     >sudo apt install curl
-
-
+    >sudo apt-get update && sudo apt-get -y upgrade
     >curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add
 
 * add new repo

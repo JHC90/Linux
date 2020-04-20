@@ -1,7 +1,8 @@
 # Cheatsheet - Linux
 
 ## Install-Quick&Dirty
-* sudo apt-get update && sudo apt-get -y upgrade && sudo apt-get dist-upgrade && sudo reboot
+* sudo apt-get update && sudo apt-get -y upgrade && sudo apt-get dist-upgrade -y && sudo reboot
+* sudo apt-get update && sudo apt-get -y upgrade && sudo apt-get dist-upgrade -y && sudo shutdown -f -t 0
 * sudo apt-get install openssh-server
 * sudo apt install net-tools
 
@@ -134,7 +135,7 @@ sudo apt install net-tools
   <tr>
     <td>sudo ip link set dev eth0 up </td>
     <td>Schaltet eine NIC ein</td>
-    <td></td>
+    <td>Das kann brutal Nervig sein => ändern der /etc/network/interfaces -Datei, und den Auto boot setzten  bspw "aut eth1" reinsetzen</td>
   </tr>
    <tr>
     <td>sudo dhclient -v</td>
@@ -145,6 +146,22 @@ sudo apt install net-tools
     <td>dig +short myip.opendns.com @resolver1.opendns.com</td>
     <td>zeigt die public ip</td>
     <td></td>
+  </tr>  
+  <tr>
+    <td>nano /etc/network/interfaces</td>
+    <td>in diesem File erstellt man die statischen IPs => muss logischerweise somit auch im DHCP so hinterlegt sein // v.a wenn ein Linux server vorliegt sollte der immer eine statische IP haben</td>
+    <td>iface eth0 inet static ( hier steht normalerweise statt static, dhcp )<br> 
+    
+  
+  address 192.168.1.1 <br>
+
+netmask 255.255.255.0<br>
+
+network 192.168.1.0<br>
+
+broadcast 192.168.1.255<br>
+
+gateway 192.168.1.254</td>
   </tr>  
 <table>
 

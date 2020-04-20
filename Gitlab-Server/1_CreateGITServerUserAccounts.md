@@ -1,6 +1,6 @@
 # Git-Server-User-Accounts
 
-## UserAccoutns
+## User-Accounts
 
 Um nun mit dem Git-Server zu interagieren müssen nun an dem Server User-Accounts angelegt werden.
 
@@ -44,4 +44,9 @@ Diese werden mit dem initialen Account root angegelegt:
 
 # Status
 Nun habe ich einen Git-Server, kann auf diesem User-Accounts erstellen. Diese User können zwischen lokal und remote Repo Daten austauschen. 
+
+Für die Interaktion mit Git aus einer Developer-perspektive habe ich ein [Repo](https://github.com/JHC90/GIT-Commands) um die Git-Commands zu veranschaulichen. 
+
+# Next Step
+Jetzt wo der Spass läuft wäre die Idee das ganze Executable zu machen. Unter Executable verstehe ich,dass man sich in dem Git-Lab server anemdlen kann und ausgehend davon Jupyter Notebooks starten und laufen lassen kann. 
 

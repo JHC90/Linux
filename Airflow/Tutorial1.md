@@ -17,7 +17,7 @@
 
 ![](imgs/2020-04-08-08-14-13.png)
 
-5. Füge das Directory zur Sitzung hintz<br>
+5. Füge das Directory zur Sitzung hinzu<br>
    Ausschließlich für eine Sitzung:
    ```
    export PATH=$PATH:$HOME/.local/bin

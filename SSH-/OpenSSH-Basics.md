@@ -8,3 +8,14 @@ mit OpenSSH wird ein SSH-Server auf dem Linux installiert, der sich für mich be
  2. sudo apt-get install openssh-server
 
 Ab jetzt ist der Server aus dem LAN für SSH-Clients mit dem Standard-User erreichbar. Der User root ist standardmäßig nicht für SSH freigeschalten. Jedoch kann in der laufenden SSH-Verbindung des Standardnutzers mit "Sudo su " gearbeitet werden.
+
+
+Zugriff dann mittels ssh-Client
+
+- Putty
+- MobaXTerm
+
+---
+
+Verifikation lokal ob ssh läuft
+> ps -ef

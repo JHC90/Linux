@@ -5,6 +5,7 @@
 * sudo apt-get update && sudo apt-get -y upgrade && sudo apt-get dist-upgrade -y && sudo shutdown -f -t 0
 * sudo apt-get install openssh-server
 * sudo apt install net-tools
+* lsb_release -a || return Akutelle Version
 
 <hr>
 ## Basic Command-Navigation
@@ -125,6 +126,7 @@
 ## Basic Networking
 sudo apt install net-tools
 
+ggf ist das Management via Webmin leichter. Ubuntu ändert ab und an von Release zu release gewisse Parameter(zumindest laut meiner gegenwärtigen Einschätzung) via Webmin werden die Commands entsprechend von der Gui übersetzt und eingefügt
 
 <table style="width:100%">
   <tr>
@@ -135,7 +137,14 @@ sudo apt install net-tools
   <tr>
     <td>sudo ip link set dev eth0 up </td>
     <td>Schaltet eine NIC ein</td>
-    <td>Das kann brutal Nervig sein => ändern der /etc/network/interfaces -Datei, und den Auto boot setzten  bspw "aut eth1" reinsetzen</td>
+    <td>
+    <b>Nutze Dafür WEBMIN, das klappt um Welten einfacher und schneller</b><br><br>
+    Die manuelle Konfiguraton kann brutal nervig & Mühsam sein => ändern der /etc/network/interfaces -Datei, und den Auto boot setzten  bspw "aut eth1" reinsetzen<br><br>
+    '''<br>
+        # network card<br>
+      auto eth0<br>
+      iface eth0 inet dhcp<br>'''<br><b>Nutze Dafür WEBMIN</td>
+
   </tr>
    <tr>
     <td>sudo dhclient -v</td>
@@ -143,8 +152,8 @@ sudo apt install net-tools
     <td></td>
   </tr>
   <tr>
-    <td>dig +short myip.opendns.com @resolver1.opendns.com</td>
-    <td>zeigt die public ip</td>
+    <td>dig +short myip.opendns.com @resolver1.opendns.com/ ODER<br> dig @ns1-1.akamaitech.net ANY whoami.akamai.net<br> +shorttd>
+    <td>zeigt die public/öffentliche ip</td>
     <td></td>
   </tr>  
   <tr>
@@ -165,3 +174,27 @@ gateway 192.168.1.254</td>
   </tr>  
 <table>
 
+
+
+----
+
+## Variablen
+
+# Sitzungsvariablen && Environment Variablen
+
+https://www.howtogeek.com/442332/how-to-work-with-variables-in-bash/
+
+
+## ENV
+
+
+1. Show all Envs
+> env | less
+
+2. Create ENV-Variable
+   >export NAME=VALUE
+   >export JAVA_HOME=/opt/openjdk11
+   >export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.252.b09-2.51.amzn1.x86_64
+
+   wenn eine Binary in einem Verzeichnis liegt und von dort aus gestartet werden soll muss export PATH vorgenommen werden:
+   > export PATH=/opt/apache-maven-3.6.3/bin:$PATH

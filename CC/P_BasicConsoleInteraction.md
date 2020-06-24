@@ -11,3 +11,6 @@
 
 * **Print working User**
   > whoami
+
+* **Print Machine Name**
+  > hostname

@@ -18,7 +18,7 @@ Hier ein mini Bsp für ein Shell-Skript:
 echo "Hallo Welt,  heute ist:"
 date
 
-Anmerkung: Zeile 1 mit ">\#!/bin/bash" verweist auf die Engine, mit welcher diess Sktipt ausgeüfhrt werden soll. Man kann Die engine mit dem "which" command herausfinden.
+Anmerkung: Zeile 1 mit ">\#!/bin/bash" verweist auf die Engine, mit welcher diess Sktipt ausgeüfhrt werden soll. Man kann Die engine mit dem "which" command herausfinden. Diese erste Zeile nennt man shebang
 
 Hier ein kleines BSP wie man ein Python-Script refferenziell ohne die .py Endung schreiben kann. ZUvor finden wir zunächst heraus in welchem Verzeichnis sich die Python enginge überhaupt befindet:
 

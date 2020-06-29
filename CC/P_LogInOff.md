@@ -27,6 +27,7 @@
 
 * **Erlange Sudo Rechte**
   > su
-  > sudo su -
+  > sudo su | temporäre Login als root
+  > sudo su - | Permanentes Login für root
   > sudo su - root
   > exit

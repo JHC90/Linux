@@ -25,9 +25,17 @@ via den Dienst [systemd](./../T_Systemstart.md)
 
 **systemctl** ist ein Programm für die Verwaltung von systemd Einträgen
 
->systemctl list-units
+---
+
+> systemctl list-units
+
 zeigt alle Dienste die von systemd verwaltet werden
 
+---
+
+> systemctl status ssh
+ 
+Prüft den Status des SSH-Servers
 
 # 
 ![](imgs/2020-06-23-15-18-47.png)

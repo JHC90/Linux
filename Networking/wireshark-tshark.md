@@ -1,3 +1,5 @@
+<h1>Installation von Wireshark und T-Shark</h1>
+
 <!-- TOC -->
 
 - [Wireshark & T-Shark](#wireshark--t-shark)
@@ -38,14 +40,19 @@ TShark is a network protocol analyzer. It lets you capture packet data from a li
 ![](imgs/2020-04-06-14-47-45.png)
 hier dann den User zulassen
 
+**Erklärung [Berechtigungen](./../Permissions.md) Wireshark**
+
+WIreshark kann entweder ledilgich für die Superuser installiert werden oder für alle User einer Gruppe Bereitgesetllt werden.
+   * Sudo-User
+    Das impliziert, dass Wireshark immer aus der CLI mit einem Sudo Befehl geöffnet werden muss, sofern man auch auf die Interfaces zugreifen will
+   * Alle User der Gruppe "wireshark" => diese Accounts müssen der Gruppe hinzugefügt werden
+
 
 
 ## T-Shark Command-List
-1. Einlesen einer pcapng-Datei
+1. BSP Einlesen einer pcapng-Datei
 > tshark -r Adobe_17_UbuntuClient_Chrome_192.168.0.18_posix-Linux-5.3.0-28-generic_1581012661.946669-drilled.pcap
 
 ![](imgs/2020-04-06-15-13-14.png)
-
-2. 
 ## Integration in Python
 https://medium.com/hacker-toolbelt/wireshark-filters-list-983c49468a45

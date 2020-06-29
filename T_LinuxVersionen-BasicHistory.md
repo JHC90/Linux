@@ -79,3 +79,4 @@ OpenSuse ist die fire Community Version der Distribution SUSE
 6. Kali Linux ist eine Linux-Version auf Debian-Basis, die optimiert wurde für Security-Audits
 
 
+BSP Ubuntu 17.06 LTS = Long Term Support

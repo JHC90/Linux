@@ -28,10 +28,13 @@ apt get update & upgrade & distupgrade
    ii. Lade deb-Package runter und installiere es lokal:
       1. Suche auf dieser [Seite](https://packages.gitlab.com/gitlab/gitlab-ce) nach der Gitlab Version, die man wünscht , weiter [Infomrationen](https://packages.gitlab.com/gitlab/gitlab-ce). Im Falle dieses Tutorials:
    ![](imgs/2020-04-11-07-27-05.png)
-      1. Lade das File mit wget herunter:
+      2. Lade das File mit wget herunter:
        ![](imgs/2020-04-11-07-49-53.png) 
-       1. installiere das deb package
+       3. installiere das deb package
             >dpkg -i gitlab-ce_10.5.7-ce.0_amd64.deb 
+      
+
+         
 
  ---
   6. Configration von Gitlab

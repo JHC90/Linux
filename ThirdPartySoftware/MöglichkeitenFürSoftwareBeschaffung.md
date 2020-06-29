@@ -128,6 +128,7 @@ Normalerweise gibt es hierzu auf der jeweiligen Seite eine Anleitung. ([Vgl Inst
 5. Packet entfernen
 
     > dpkg -r 'paketname'
+    > dpkg -r --force-depends'paketname' # Wenn paket Abhängigkeiten aufweist
 
 6. Packete auflisten
 

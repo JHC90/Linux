@@ -18,4 +18,4 @@ Zugriff dann mittels ssh-Client
 ---
 
 Verifikation lokal ob ssh läuft
-> ps -ef
+> ps -ef | grep ssh

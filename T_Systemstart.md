@@ -49,7 +49,7 @@ upzudaten
 ![](imgs/2020-06-23-14-42-26.png)
 
 * SysVinit startet einen ersten Prozess namens init, der wiederum weitere Prozesse "forkt"
-* Unter /etc/init.d/ werden die Init-Skripte gespeichert, sie verwalten die Dienste
+* Unter /etc// werden die Init-Skripte gespeichert, sie verwalten die Dienste
 * Es gibt Runlevel, die den Status des Systems nach dem Start definieren
 * Über [Runlevel-Verzeichnisse](./T_RunLevel.md ) (/etc/rc[0-6[S].d/) werden Verlinkungen für die Skripte gesetzt, die die Dienste im jeweiligen Runlevel starten oder stoppen sollen
 * Der Kontroll-Befehl für die Dienste lautet: service \<Dienstname> start|stop|restart|status

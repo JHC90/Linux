@@ -1,7 +1,7 @@
 # Networking
 
 ## Debian
-nutzt zentral Datei Namens Interfaces. Ubuntu nutzt Networkmanager
+nutzt zentral Datei Namens /etc/interfaces. Ubuntu nutzt Networkmanager
 
 ### GUI
 ![](imgs/2020-06-19-07-11-54.png)
@@ -29,8 +29,7 @@ Dann muss noch zusätzlich die DNS-Einträge hinterlegt werden
 
 
 > vi /etc/resolv.conf
-
-dort dann die eigenen DNS-Server hinzufügen
+dort dann die eigenen DNS-Server hinzufügen, bzw hier ist eine DNS-Server hinterlegt
 
 ![](imgs/2020-06-19-07-31-24.png)
 
